@@ -1,25 +1,39 @@
 @font-face {
 	font-family: GZA;
-	src: url(Gza-Regular.otf), format(otf),
-	url(Gza-Regular.eot), format(eot),
-	url(Gza-Regular.woff), format(woff),
-	url(Gza-Regular.woff2), format(woff2);
+	src: url(Gza-Regular.otf) format('otf'),
+	url(Gza-Regular.eot) format('eot'),
+	url(Gza-Regular.woff) format('woff'),
+	url(Gza-Regular.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: NHU;
+	src: url(NHURegular.otf) format('otf'),
+	url(NHURegular.ttf) format('ttf'),
+	url(NHURegular.woff) format('woff');
 }
 
 body {
-	background-color: #EEEEEE;
+	background-color: white;
 /*	cursor: url(cursor.svg), auto;*/
 	user-select: none;   
 	width: 100vw;
 	height: 100vh;
+	display:flex;
+	cursor: crosshair;
 }
 
-p {
-/*  font-family: Gotu;*/
-  font-size: 28px;
-  position: absolute;
-  letter-spacing: -1px;
+a.manifesto {
+	position: fixed;
+	color: black;
+	/*bottom: 15px;*/
+	/*left: 50%;*/
+	top: 15px;
+	right: 15px;
+	transform: translateX(-50%);
+	z-index: 3;
 }
+
 
 div {
 	position: absolute;
@@ -34,6 +48,46 @@ div {
 color: #399558;
 }
 
+div.manifesto-content {
+	background-color: #cad8fb;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    /*left: 100%;*/
+    top: 0;
+    left: 0;
+    transform: translateX(200%);
+    transition: transform 0.5s ease;
+    z-index: 2;
+}
+
+.text {
+	margin-top: 35px;
+	padding: 0 35px;
+	font-family: NHU;
+}
+
+span {
+	font-style: italic;
+}
+.open {
+	transform: translateX(100%) !important;
+}
+
+    /* transform: translateY(-50%);
+
+
+div.text {
+	font-family: Arial;
+    width: 600px;
+    display: flex;
+    margin: auto;
+    font-size: 26px;
+    color: white;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%)
+}
 
 
 
