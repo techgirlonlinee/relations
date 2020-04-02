@@ -1,0 +1,12 @@
+body {
+	background-color: white;
+	cursor: url(cursor.png), auto;
+}
+
+p {
+  font-family: Sen;
+  color: blue;
+  font-size: 28px;
+  position: absolute;
+}
+
