@@ -1,7 +1,9 @@
 body {
-	background-color: white;
+	background-color: #EEEEEE;
 /*	cursor: url(cursor.svg), auto;*/
 	user-select: none;   
+	width: 100vw;
+	height: 100vh;
 }
 
 p {
@@ -18,8 +20,12 @@ div {
 	border-radius: 50%;*/
 	font-family: Sen;
   font-size: 28px;
-/*  cursor: url(cursor.svg), auto;*/
-/*-webkit-text-stroke: 0.8px #1D25E5;
-color: transparent;*/
-color: #1D25E5;
+/*color: #073AD9;*/
+/*color: #0836F2;*/
+/*color: #1FAB69;*/
+color: #399558;
 }
+
+
+
+
