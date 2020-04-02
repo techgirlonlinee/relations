@@ -1,7 +1,7 @@
 const addStamp = function (x, y) { 
   // <img src="circle.svg">
-  const word = document.createElement("P") //create an image from scratch
-  word.innerText = "relations";
+  const word = document.createElement("div") //create an image from scratch
+  word.innerText = "entity";
   word.style.left = x + "px" // to put it according to the X position that we clicked
   word.style.top = y + "px" // to put it according to the Y position that we clicked
  

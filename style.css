@@ -1,12 +1,25 @@
 body {
 	background-color: white;
-	cursor: url(cursor.png), auto;
+/*	cursor: url(cursor.svg), auto;*/
+	user-select: none;   
 }
 
 p {
-  font-family: Gotu;
-  color: blue;
+/*  font-family: Gotu;*/
   font-size: 28px;
   position: absolute;
+  letter-spacing: -1px;
 }
 
+div {
+	position: absolute;
+/*	border: 1px solid #000000;
+	padding: 10px 14px 18px 15px;
+	border-radius: 50%;*/
+	font-family: Sen;
+  font-size: 28px;
+/*  cursor: url(cursor.svg), auto;*/
+/*-webkit-text-stroke: 0.8px #1D25E5;
+color: transparent;*/
+color: #1D25E5;
+}
