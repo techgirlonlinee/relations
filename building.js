@@ -16,11 +16,20 @@ window.onload = function() {
 	object.style.left = xy[1] + 'px';
 }
 
+const twoWordArray = ["self", "other"]
+let wordToSelect = 0
 
 const addStamp = function(x, y) {
-    // <img src="circle.svg">
+
+    if (wordToSelect === 0) {
+		wordToSelect = 1
+	} else {
+		wordToSelect = 0
+	}
+
     const word = document.createElement("div") //create an image from scratch
-    word.innerText = "other";
+    // word.innerText = "other";
+    word.innerText = twoWordArray[wordToSelect];
     word.style.left = x + "px" // to put it according to the X position that we clicked
     word.style.top = y + "px" // to put it according to the Y position that we clicked
     
