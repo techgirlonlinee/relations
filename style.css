@@ -118,7 +118,7 @@ p.about {
 }
 
 p.real-content {
-	margin-top:6px;
+    margin-top: 6px;
     font-size: 24px;
 }
 
@@ -127,14 +127,14 @@ span {
 }
 
 a.contact {
-	text-decoration: none;
-	color: #399558;
-	font-size:12px;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 20px;
-	font-family: NHU;
+    text-decoration: none;
+    color: #399558;
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    font-family: NHU;
 }
 
 .open {
@@ -144,4 +144,56 @@ a.contact {
 .seen {
     opacity: 1 !important;
     z-index: 3;
+}
+
+
+
+@media(max-width: 600px) {
+
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+    div.manifesto-content {
+        background-color: #cad8fb;
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        /*     transform: translateX(100%); */
+        transform: translateX(0%);
+        transition: transform 0.5s ease;
+        z-index: 2;
+    }
+
+    .text {
+        padding: 0 15px;
+    }
+
+    p.heading {
+        font-size: 26px;
+    }
+
+    p.real-content {
+        margin-top: 6px;
+        font-size: 16px;
+    }
+
+    p.call {
+        font-size: 21px;
+    }
+
+    a.contact {
+        bottom: -60px;
+        margin-bottom: 20px;
+    }
+
+    .open {
+        transform: translateX(100%) !important;
+    }
+
+
 }
