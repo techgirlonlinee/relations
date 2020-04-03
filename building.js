@@ -1,10 +1,11 @@
 function getRandomPosition(element) {
-    var x = document.body.offsetHeight;
-    var y = document.body.offsetWidth;
+    var x = document.body.offsetHeight - 10;
+    var y = document.body.offsetWidth - 10;
     var randomX = Math.floor(Math.random() * x);
     var randomY = Math.floor(Math.random() * y);
     return [randomX, randomY];
 }
+
 
 window.onload = function() {
     const object = document.createElement("div")
@@ -26,28 +27,29 @@ const addStamp = function(x, y) {
         wordToSelect = 0
     }
 
-    const word = document.createElement("div") 
+    const word = document.createElement("div")
     // word.innerText = "other";
     word.innerText = twoWordArray[wordToSelect];
-    word.style.left = x + "px" 
-    word.style.top = y + "px" 
+    word.style.left = x + "px"
+    word.style.top = y + "px"
 
     document.body.appendChild(word)
     word.setAttribute("id", "eachWord");
 }
 
+
 document.addEventListener("click", function(event) {
     addStamp(event.pageX, event.pageY)
 })
+
 
 const closeButton = document.querySelector('.manifesto')
 const content = document.querySelector('div.manifesto-content')
 const viewButton = document.querySelector('a.expand-button')
 closeButton.addEventListener("click", function(event) {
-	console.log("click")
+    // console.log("click")
     event.preventDefault()
     content.classList.toggle('open');
-    // content.classList.remove('open');
     viewButton.classList.toggle('seen');
 })
 
@@ -58,3 +60,9 @@ viewButton.addEventListener("click", function(event) {
 })
 
 
+// if (content.classList.contains('open')) {
+//     document.addEventListener("click", function(event) {
+//         console.log("click when menu off")
+//         addStamp(event.pageX, event.pageY)
+//     })
+// }
