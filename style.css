@@ -147,6 +147,9 @@ a.contact {
     z-index: 3;
 }
 
+.close-tab {
+	color: #399558;
+}
 
 
 @media(max-width: 600px) {

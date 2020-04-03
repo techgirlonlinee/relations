@@ -6,7 +6,6 @@ function getRandomPosition(element) {
     return [randomX, randomY];
 }
 
-
 window.onload = function() {
     const object = document.createElement("div")
     object.innerText = "self";
@@ -54,11 +53,18 @@ closeButton.addEventListener("click", function(event) {
 })
 
 viewButton.addEventListener("click", function(event) {
-    event.preventDefault()
+    event.preventDefault();
     content.classList.toggle('open');
     viewButton.classList.toggle('seen');
 })
 
+const closeTab = document.querySelector('.close-tab')
+closeTab.addEventListener("click", function(event) {
+	event.preventDefault();
+	console.log("click when menu off")
+	content.classList.toggle('open');
+	viewButton.classList.toggle('seen');
+})
 
 // if (content.classList.contains('open')) {
 //     document.addEventListener("click", function(event) {
@@ -66,3 +72,18 @@ viewButton.addEventListener("click", function(event) {
 //         addStamp(event.pageX, event.pageY)
 //     })
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
