@@ -1,74 +1,80 @@
 @font-face {
-	font-family: GZA;
-	src: url(Gza-Regular.otf) format('otf'),
-	url(Gza-Regular.eot) format('eot'),
-	url(Gza-Regular.woff) format('woff'),
-	url(Gza-Regular.woff2) format('woff2');
+    font-family: GZA;
+    src: url(Gza-Regular.otf) format('otf'),
+        url(Gza-Regular.eot) format('eot'),
+        url(Gza-Regular.woff) format('woff'),
+        url(Gza-Regular.woff2) format('woff2');
 }
 
 @font-face {
-	font-family: NHU;
-	src: url(NHURegular.otf) format('otf'),
-	url(NHURegular.ttf) format('ttf'),
-	url(NHURegular.woff) format('woff');
+    font-family: NHU;
+    src: url(NHURegular.otf) format('otf'),
+        url(NHURegular.ttf) format('ttf'),
+        url(NHURegular.woff) format('woff');
 }
 
 body {
-	background-color: white;
-	user-select: none;   
-	width: 100vw;
-	height: 100vh;
-	display:flex;
-	cursor: crosshair;
+    background-color: white;
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    cursor: crosshair;
 }
 
 a.manifesto {
-	position: absolute;
-	color: black;
+    position: absolute;
+    color: black;
     top: 16px;
     right: 6px;
-	transform: translateX(-50%);
-	z-index: 3;
-	transition: transform 3s ease;
+    transform: translateX(-50%);
+    z-index: 3;
+    transition: transform 3s ease;
 }
 
 a.expand-button {
-	position: absolute;
-	top: 16px;
+    position: absolute;
+    top: 16px;
     right: 19px;
-	width: 33px;
-	height: 33px;
-	background-color: #cad8fb;
-	border-radius: 50%;
-	opacity: 0;
-	transition: opacity 1s ease;
+    width: 33px;
+    height: 33px;
+    background-color: #cad8fb;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
 img {
-	width: 25px;
+    width: 25px;
 }
 
-
-
 div {
-	position: absolute;
-	font-family: GZA;
-  font-size: 28px;
-color: #399558;
+    position: absolute;
+    font-family: GZA;
+    font-size: 28px;
+    color: #399558;
 }
 
 @keyframes spin {
-  0% {transform: translate(-50%, -50%) rotate(0deg); }
-  50% {transform: translate(-50%, -50%) rotate(10deg);}
-  100% {transform: translate(-50%, -50%) rotate(0deg); }
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
 }
 
 #eachWord {
-	animation: spin 10s linear infinite;
+    animation: spin 15s linear infinite;
 }
 
 div.manifesto-content {
-	background-color: #cad8fb;
+    background-color: #cad8fb;
     width: 50vw;
     height: 100vh;
     position: absolute;
@@ -80,54 +86,51 @@ div.manifesto-content {
 }
 
 .text {
-	margin-top: 20px;
-	padding: 0 35px;
-	font-family: NHU;
+    margin-top: 20px;
+    padding: 0 35px;
+    font-family: NHU;
 }
 
 .text p {
-	margin: 10px;
+    margin: 10px;
 }
 
 p.heading {
-	font-size: 40px;
+    font-size: 40px;
 }
 
 p.instructions {
-	margin-top: 32px;
+    margin-top: 32px;
 }
 
 p.about {
-	margin-top: 40px;
-	padding-bottom: 4px;
-	border-bottom: 2px solid #399558;
+    margin-top: 40px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #399558;
 }
 
 .filler-circle {
-	margin-right: 5px;
-	width: 20px;
-	height: 20px;
-	background-color: #F3811A;
-	display: inline-block;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #F3811A;
+    display: inline-block;
 }
 
-p.real-content{
-	font-size: 24px;
+p.real-content {
+	margin-top:6px;
+    font-size: 24px;
 }
 
 span {
-	font-style: italic;
+    font-style: italic;
 }
 
 .open {
-	transform: translateX(200%) !important;
+    transform: translateX(200%) !important;
 }
 
 .seen {
-	opacity: 1 !important;
-	z-index: 3;
+    opacity: 1 !important;
+    z-index: 3;
 }
-
-
-
-
