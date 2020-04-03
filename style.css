@@ -160,7 +160,7 @@ a.contact {
         width: 100%;
         overflow-x: hidden !important;
         overflow-y: auto;
-        position: fixed;
+        position: relative;
     }
 
     div.manifesto-content {
