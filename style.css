@@ -62,7 +62,7 @@ div {
     }
 
     50% {
-        transform: translate(-50%, -50%) rotate(10deg);
+        transform: translate(-50%, -50%) rotate(70deg);
     }
 
     100% {
@@ -71,7 +71,7 @@ div {
 }
 
 #eachWord {
-    animation: spin 20s linear infinite;
+    animation: spin 220s linear infinite;
 }
 
 div.manifesto-content {
