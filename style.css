@@ -148,17 +148,19 @@ a.contact {
 }
 
 .close-tab {
-	color: #399558;
+    color: #399558;
 }
 
 
 @media(max-width: 600px) {
-
-body {
-	width: 100%;
-	overflow-x: hidden !important;
-	overflow-y: auto;
-}
+	html {
+		overflow-x: hidden;
+	}
+    body {
+        width: 100%;
+        overflow-x: hidden !important;
+        overflow-y: auto;
+    }
 
     div.manifesto-content {
         background-color: #cad8fb;
@@ -172,6 +174,7 @@ body {
         transform: translateX(0%);
         transition: transform 0.5s ease;
         z-index: 2;
+        overflow-x: hidden;
     }
 
     .text {
@@ -182,22 +185,18 @@ body {
         font-size: 26px;
     }
 
-/*    p.real-content {
-        margin-top: 6px;
-        font-size: 16px;
-    }*/
     p.real-content {
-    margin-top: 18px;
-    font-size: 18px;
-	}
+        margin-top: 18px;
+        font-size: 18px;
+    }
 
     p.call {
         font-size: 20px;
     }
 
     a.contact {
-top: 26px;
-height: 20px;
+        top: 26px;
+        height: 20px;
     }
 
     .open {

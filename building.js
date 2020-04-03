@@ -38,7 +38,10 @@ const addStamp = function(x, y) {
 
 
 document.addEventListener("click", function(event) {
-    addStamp(event.pageX, event.pageY)
+    // addStamp(event.pageX, event.pageY)
+    if (event.target.id === "interactive-canvas") {
+    	addStamp(event.pageX, event.pageY)
+    }
 })
 
 
@@ -66,7 +69,7 @@ closeTab.addEventListener("click", function(event) {
 	viewButton.classList.toggle('seen');
 })
 
-// if (content.classList.contains('open')) {
+// if (event.target.id === "interactive-canvas")) {
 //     document.addEventListener("click", function(event) {
 //         console.log("click when menu off")
 //         addStamp(event.pageX, event.pageY)
