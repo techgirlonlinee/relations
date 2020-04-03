@@ -177,18 +177,21 @@ body {
         font-size: 26px;
     }
 
-    p.real-content {
+/*    p.real-content {
         margin-top: 6px;
         font-size: 16px;
-    }
+    }*/
+    p.real-content {
+    margin-top: 18px;
+    font-size: 18px;
+	}
 
     p.call {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     a.contact {
-        bottom: -60px;
-        margin-bottom: 20px;
+top: 26px;
     }
 
     .open {
