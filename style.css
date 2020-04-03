@@ -20,6 +20,7 @@ body {
     height: 100vh;
     display: flex;
     cursor: crosshair;
+    overflow-x: hidden;
 }
 
 a.manifesto {
