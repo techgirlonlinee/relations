@@ -37,9 +37,15 @@ const addStamp = function(x, y) {
 }
 
 
+// document.addEventListener("click", function(event) {
+//     // addStamp(event.pageX, event.pageY)
+//     if (event.target.id === "interactive-canvas") {
+//     	addStamp(event.pageX, event.pageY)
+//     }
+// })
+
 document.addEventListener("click", function(event) {
-    // addStamp(event.pageX, event.pageY)
-    if (event.target.id === "interactive-canvas") {
+    if (event.target.id === "interactive-canvas" || twoWordArray.includes(event.target.textContent)) {
     	addStamp(event.pageX, event.pageY)
     }
 })
@@ -48,8 +54,8 @@ document.addEventListener("click", function(event) {
 const closeButton = document.querySelector('.manifesto')
 const content = document.querySelector('div.manifesto-content')
 const viewButton = document.querySelector('a.expand-button')
+
 closeButton.addEventListener("click", function(event) {
-    // console.log("click")
     event.preventDefault()
     content.classList.toggle('open');
     viewButton.classList.toggle('seen');
@@ -68,19 +74,6 @@ closeTab.addEventListener("click", function(event) {
 	content.classList.toggle('open');
 	viewButton.classList.toggle('seen');
 })
-
-// if (event.target.id === "interactive-canvas")) {
-//     document.addEventListener("click", function(event) {
-//         console.log("click when menu off")
-//         addStamp(event.pageX, event.pageY)
-//     })
-// }
-
-
-
-
-
-
 
 
 
