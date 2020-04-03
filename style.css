@@ -151,7 +151,8 @@ a.contact {
 @media(max-width: 600px) {
 
 body {
-	overflow-x: hidden;
+	width: 100%;
+	overflow-x: hidden !important;
 	overflow-y: auto;
 }
 
@@ -192,6 +193,7 @@ body {
 
     a.contact {
 top: 26px;
+height: 20px;
     }
 
     .open {
