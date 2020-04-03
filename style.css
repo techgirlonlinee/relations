@@ -70,13 +70,13 @@ div {
 }
 
 #eachWord {
-    animation: spin 15s linear infinite;
+    animation: spin 20s linear infinite;
 }
 
 div.manifesto-content {
     background-color: #cad8fb;
     width: 50vw;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -124,6 +124,17 @@ p.real-content {
 
 span {
     font-style: italic;
+}
+
+a.contact {
+	text-decoration: none;
+	color: #399558;
+	font-size:12px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 20px;
+	font-family: NHU;
 }
 
 .open {
