@@ -160,6 +160,7 @@ a.contact {
         width: 100%;
         overflow-x: hidden !important;
         overflow-y: auto;
+        position: fixed;
     }
 
     div.manifesto-content {
@@ -174,6 +175,7 @@ a.contact {
         transform: translateX(0%);
         transition: transform 0.5s ease;
         z-index: 2;
+
         overflow-x: hidden;
     }
 
