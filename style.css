@@ -30,7 +30,12 @@ a.manifesto {
     right: 6px;
     transform: translateX(-50%);
     z-index: 3;
-    transition: transform 3s ease;
+    transition: transform 1s;
+}
+
+a.manifesto:hover {
+	transform: translate(-50%,0%) rotate(360deg);
+	transition: transform 1s;
 }
 
 a.expand-button {
@@ -138,6 +143,9 @@ a.contact {
     font-family: NHU;
 }
 
+a:hover {
+	color: white;
+}
 .open {
     transform: translateX(200%) !important;
 }
