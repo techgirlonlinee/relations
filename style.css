@@ -88,7 +88,7 @@ div.manifesto-content {
 
 .text {
     margin-top: 20px;
-    padding: 0 35px;
+    padding: 0 34px;
     font-family: NHU;
 }
 
@@ -114,12 +114,12 @@ p.about {
     margin-right: 5px;
     width: 20px;
     height: 20px;
-    background-color: #F3811A;
+    background-color: #FC9404;
     display: inline-block;
 }
 
 p.real-content {
-    margin-top: 6px;
+        margin-top: 14px;
     font-size: 24px;
 }
 
