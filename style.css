@@ -81,6 +81,11 @@ div {
 
 #eachWord {
     animation: spin 240s linear infinite;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 div.manifesto-content {
@@ -164,13 +169,6 @@ a:hover {
     color: #399558;
 }
 
-
-#eachword {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
 
 
 
