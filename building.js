@@ -61,10 +61,6 @@ closeButton.addEventListener("click", function(event) {
     viewButton.classList.toggle('seen');
 })
 
-// closeButton.addEventListener("mouseover", function() {
-// 	this.src = 'close.svg';
-// })
-
 viewButton.addEventListener("click", function(event) {
     event.preventDefault();
     content.classList.toggle('open');

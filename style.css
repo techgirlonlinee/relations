@@ -16,6 +16,10 @@
 body {
     background-color: white;
     user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -34,8 +38,8 @@ a.manifesto {
 }
 
 a.manifesto:hover {
-	transform: translate(-50%,0%) rotate(360deg);
-	transition: transform 1s;
+    transform: translate(-50%, 0%) rotate(360deg);
+    transition: transform 1s;
 }
 
 a.expand-button {
@@ -124,7 +128,7 @@ p.about {
 }
 
 p.real-content {
-        margin-top: 14px;
+    margin-top: 14px;
     font-size: 24px;
 }
 
@@ -144,8 +148,9 @@ a.contact {
 }
 
 a:hover {
-	color: white;
+    color: white;
 }
+
 .open {
     transform: translateX(200%) !important;
 }
@@ -201,9 +206,10 @@ transform: translate(-50%, -50%) rotate(80deg);
 
 
 @media(max-width: 600px) {
-	html {
-		overflow-x: hidden;
-	}
+    html {
+        overflow-x: hidden;
+    }
+
     body {
         width: 100%;
         overflow-x: hidden !important;
