@@ -27,7 +27,6 @@ const addStamp = function(x, y) {
     }
 
     const word = document.createElement("div")
-    // word.innerText = "other";
     word.innerText = twoWordArray[wordToSelect];
     word.style.left = x + "px"
     word.style.top = y + "px"
@@ -36,17 +35,9 @@ const addStamp = function(x, y) {
     word.setAttribute("id", "eachWord");
 }
 
-
-// document.addEventListener("click", function(event) {
-//     // addStamp(event.pageX, event.pageY)
-//     if (event.target.id === "interactive-canvas") {
-//     	addStamp(event.pageX, event.pageY)
-//     }
-// })
-
 document.addEventListener("click", function(event) {
     if (event.target.id === "interactive-canvas" || twoWordArray.includes(event.target.textContent)) {
-    	addStamp(event.pageX, event.pageY)
+        addStamp(event.pageX, event.pageY)
     }
 })
 
@@ -69,10 +60,10 @@ viewButton.addEventListener("click", function(event) {
 
 const closeTab = document.querySelector('.close-tab')
 closeTab.addEventListener("click", function(event) {
-	event.preventDefault();
-	console.log("click when menu off")
-	content.classList.toggle('open');
-	viewButton.classList.toggle('seen');
+    event.preventDefault();
+    console.log("click when menu off")
+    content.classList.toggle('open');
+    viewButton.classList.toggle('seen');
 })
 
 
@@ -81,5 +72,50 @@ closeTab.addEventListener("click", function(event) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// function reset1(){
+// clearTimeout(my_time);
+// document.getElementById('i1').style.left= "500px";
+// document.getElementById('i1').style.top= "100px";
+// document.getElementById("msg").innerHTML="";
+
+// }
+
+
+
+// function move_img(str) {
+
+//     var x = document.getElementById('eachWord').offsetTop;
+//     x = x + 100;
+//     document.getElementById('eachWord').style.top = x + "px";
+
+// }
+
+// function disp() {
+//     var step = 1; // Change this step value
+//     var y = document.getElementById('eachWord').offsetTop;
+//     var x = document.getElementById('eachWord').offsetLeft;
+//     if (y < 600) {
+//         y = y + step;
+//         document.getElementById('eachWord').style.top = y + "px"; // vertical movment
+//     } else {
+//         if (x < 800) {
+//             x = x + step;
+//             document.getElementById('eachWord').style.left = x + "px"; // horizontal movment
+//         }
+//     }
+
+// }
 
 
